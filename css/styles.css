@@ -12,6 +12,79 @@ body{
   font-family: Bai Jamjuree;
 }
 
+/*********** Header section css **************/
+.header-section{
+  background-image: url(bg-header-desktop.png);
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ .header-image{
+   margin: 60px auto 40px auto;
+ }
+
+ .header-btn{
+  margin: 40px auto 80px auto;
+ }
+
+ .second-header-text{
+  margin: 60px auto 0px auto;
+ }
+
+ .header-text p, .second-header-text p{
+   width: 50%;
+   margin: auto;
+   color: #9eabb2;
+ }
+
+ /******************** Computer section css***************/
+.computer-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+  margin: 80px auto;
+}
+
+.computer-image img{
+  width: 100%;
+}
+
+.computer-section h5{
+  margin-top: 50px;
+}
+
+.computer-section-text{
+  width: 80%;
+  margin-top: 20px;
+}
+
+.computer-section-text p{
+  color: #9eabb2;
+}
+
+/*************** Mobile Device Css************/
+.device{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.device p{
+  width: 65%;
+  margin: 5px auto 60px auto;
+  color: #9eabb2;
+}
+
+.device img{
+  width: 100%;
+}
+
 .main-container {
   text-align: center;
   /* width: 1400px; */
@@ -21,9 +94,9 @@ body{
   margin: 3em 20%;
 }
 
-.sub-head, .download-header {
+.sub-head, .download-header, h5, h1, h3, h4, h2{
   color: hsl(210, 10%, 33%);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .sub-head-paragraph {
@@ -40,8 +113,6 @@ body{
   width: 80%;
   padding-bottom: 80px;
 }
-
-
 
 .img-logo {
   margin-bottom: 2em;
@@ -86,6 +157,9 @@ body{
 footer{
   background-color: #f5f6f8;
   height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .faq p:hover, .privacy p:hover, .icons p:hover, .guide p:hover{
@@ -196,6 +270,51 @@ footer{
     text-align: center;
   }
 
+  .header-section{
+    background-image: url(bg-header-mobile.png);
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .header-btn{
+     display: flex;
+     flex-direction: column;
+     width: 80%;
+   }
+
+   .computer-section{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
+  .computer-section-text{
+    margin: -40px auto 100px auto;
+  }
+
+  .computer-section-text, .device{
+    width: 100%;
+  }
+
+  .device p{
+    width: 80%;
+  }
+
+  .second-header-text{
+    margin: 120px auto 60px auto;
+  }
+
+  .header-text p, .second-header-text p{
+    width: 80%;
+  }
+
   .sub-main-container{
     display: flex;
     flex-direction: column;
@@ -253,6 +372,5 @@ footer{
 
   .download-header{
     color: hsl(210, 10%, 33%) !important;
-
   }
 }
